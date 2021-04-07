@@ -145,9 +145,8 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 &nbsp;
 ### TABLAS DE RELACIÓN NECESARIAS PARA MANTENER LA ESTRUCTURA DEL VOCABULARIO <a name="id9"></a>
-&nbsp;
 
-[comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
+
 &nbsp;
 #### EMPLEO_REL_BOLETIN_CONVOCA <a name="id10"></a>
 &nbsp;
