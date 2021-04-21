@@ -19,6 +19,14 @@
     - [TABLAS DE RELACIÓN NECESARIAS PARA MANTENER LA ESTRUCTURA DEL VOCABULARIO](#id9)  
        - [EMPLEO_REL_BOLETIN_CONVOCA](#id10) 
        - [EMPLEO_REL_OFERTA_CONVOCA](#id11) 
+4. [TAXONOMÍAS SKOS](#id12)
+      - [GRUPO-PROFESIONAL](#id13)
+      - [EMPLEADO-PUBLICO](#id14)
+      - [CUERPO](#id15)
+      - [MODALIDAD](#id16)
+      - [TURNO](#id17)
+
+ 
 
 
 
@@ -171,6 +179,104 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |     id                 |     VARCHAR (50)    |     Interno Para mantener   coherencia con la estructura de la API. Ejemplo: EMRELCON001    |     Referencia inequívoca   al recurso dentro de un contexto dado.                                                                                          |     http://purl.org/dc/terms/identifier                                                     |
 |     oferta_id          |     VARCHAR (50)    |     OFEM0001                                                                                |     Oferta de   Empleo Público que realiza la administración para cubrir plazas según las   necesidades.     FK de la   tabla EMPLEO_OFERTA_PUBLICA         |     http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#OfertaEmpleoPublico          |
 |     convocatoria_id    |     VARCHAR (50)    |     CONEM0001                                                                               |     Convocatoria   de Empleo Público para cubrir plazas que provienen de la Oferta de Empleo   Público.     FK de la   tabla EMPLEO_CONVOCATORIA_PUBLICA    |     http://vocab.ciudadesabiertas.es/def/sector-publico/empleo#ConvocatoriaEmpleoPublico    |
+
+
+
+&nbsp;
+
+## TAXONOMÍAS SKOS <a name="id12"></a>
+&nbsp;
+
+### GRUPO-PROFESIONAL <a name="id13"></a>
+http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/grupo-profesional
+&nbsp;
+Tesauro que recoge los grupos profesionales de la Administración General del Estado en España.
+|     Término    |     Label    |
+|----------------|--------------|
+|     A1         |     A1       |
+|     A2         |     A2       |
+|     B          |     B        |
+|     C1         |     C1       |
+|     C2         |     C2       |
+
+
+
+&nbsp;
+### EMPLEADO-PUBLICO <a name="id14"></a>
+http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/empleado-publico
+&nbsp;
+Tesauro que recoge los tipos de empleados públicos en España.
+|     Tipo                |     Subtipo 1                      |     Subtipo 2                                  |     Label                                                |
+|-------------------------|------------------------------------|------------------------------------------------|----------------------------------------------------------|
+|     funcionario         |                                    |                                                |     funcionario                                          |
+|                         |     funcionario-carrera            |                                                |     Funcionario de carrera.                              |
+|                         |     funcionario-interino           |                                                |     Funcionario   interino.                              |
+|                         |                                    |     funcionario-interino-acumulacion-tareas    |     Funcionario interino   por acumulación de tareas.    |
+|                         |                                    |     funcionario-interino-programa              |     Funcionario interino   por programa.                 |
+|                         |                                    |     funcionario-interino-sustitucion           |     Funcionario interino   por sustitución.              |
+|                         |                                    |     funcionario-interino-vacante               |     Funcionario interino   por plaza vacante.            |
+|     Personal-laboral    |                                    |                                                |     Personal Laboral.                                    |
+|                         |     personal-laboral-fijo          |                                                |     Personal Laboral Fijo.                               |
+|                         |     personal-laboral-indefinido    |                                                |     Personal laboral Indefinido.                         |
+|                         |     personal-laboral-temporal      |                                                |     Personal Laboral Temporal.                           |
+|                         |                                    |     personal-laboral-temporal-en-convenio      |     Personal Laboral Temporal en Convenio.               |
+
+
+
+&nbsp;
+### CUERPO <a name="id15"></a>
+http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/cuerpo
+&nbsp;
+Tesauro que recoge los cuerpos de la Administración General del Estado de España.
+|     Término                                              |     Label    |
+|----------------------------------------------------------|--------------|
+|     administración-especial                              |     AE       |
+|     administracion-general                               |     AG       |
+|     administracion-general-o-especial                    |     AGE      |
+|     habilitado-caracter-nacional                         |     HCN      |
+|     habilitado-general-o-habilitado-caracter-nacional    |     AGHCN    |
+
+
+
+
+&nbsp;
+### MODALIDAD <a name="id16"></a>
+http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/modalidad
+&nbsp;
+Tesauro que recoge las modalidades de las convocatorias de empleo público en España.
+|     Término               |     Label                  |
+|---------------------------|----------------------------|
+|     concurso              |     Concurso.              |
+|     concurso-oposicion    |     Concurso oposición.    |
+|     oposicion             |     Oposición.             |
+
+
+
+&nbsp;
+### TURNO <a name="id17"></a>
+http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/empleo/turno	
+&nbsp;
+Tesauro que recoge los turnos de acceso de la Administración General del Estado de España.
+|     Término      |     Label         |
+|------------------|-------------------|
+|     interno      |     Interno.      |
+|     libre        |     Libre.        |
+|     reservado    |     Reservado.    |
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
